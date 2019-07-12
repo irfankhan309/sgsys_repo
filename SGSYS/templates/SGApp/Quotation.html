@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'SGApp/base.html' %}
+<title>{% block title %}SG Quotation{% endblock %}</title>
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+<div class="jumbotron">
+  <form  method="post">
+    {% csrf_token %}
+    {{QForm| crispy}}
+    <button type="submit" class="btn btn-outline-success">Get Quotation</button>
+  </form>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

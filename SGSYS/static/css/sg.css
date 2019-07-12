@@ -1,0 +1,212 @@
+#Nav li a {
+  margin-left: 35px;
+  font-family: 'Marcellus', serif;
+  /* color:#d35400; */
+  color:black;
+  font-size: 18px;
+  font-weight:400;
+}
+#Nav li a:hover{
+color:seagreen;
+font-weight: 600;
+}
+
+
+body{
+  /* background-image: url(); */
+  /* margin-top: 10px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#respimg{
+  width: 100%;
+  height: auto;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  top: 100px;
+  left: 45px;
+  font-size: 20px;
+  color:#0083B0;
+  font-family: 'Arvo', serif;
+}
+.card-deck{
+  margin-top: 30px;
+  margin: 5%;
+}
+/* .card img{
+  height: 250px;
+  width: 350px;
+  margin: 2.8%;
+} */
+.card {
+  color:orange;
+  float: left;
+  margin-left:8.8%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  /* margin-right: 20px; */
+  /* padding-left: 20px; */
+  border-radius: 0;
+  border-color: grey;
+  font-family: 'Arvo', serif;
+}
+
+
+#acimg{
+  width: 300px;
+  height: 250px;
+  margin-left: 13%;
+  margin-top: 10px;
+}
+form label{
+  color:green;
+}
+#Note{
+  color:red;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+
+}
+#aboutpg{
+  /* background: blue; */
+background: #6441A5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#Note1{
+  color:green;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+
+}
+#aboutpg h4{
+  color:white;
+  font-family: 'Arvo', serif;
+
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+#abtimg{
+  height: 170px;
+  width: 300px;
+}
+#abtun{
+  border-bottom: 1px solid white;
+  margin-left:120px;
+  margin-right: 120px;
+}
+#h4spn{
+  color:orange;
+  font-family: 'Arvo', serif;
+
+}
+#contactpg{
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Arvo', serif;
+
+}
+#servpg{
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#servpg1{
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 20px;
+  font-family: 'Arvo', serif;
+
+}
+
+/* slanted div */
+
+.hero-bg {
+  /* Skew the entire div */
+    -webkit-transform: skewY(4deg);
+    -o-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-transform-origin: 100%;
+    -o-transform-origin: 100%;
+    transform-origin: 100%;
+    z-index: -1;
+
+    /* Weird thing: the line is jagged in Webkit browsers because of a rendering engine quirk. Enabling this fixes it. */
+    -webkit-backface-visibility: hidden;
+    /* Compensate for the skewing by pushing it up, off the screen to hide what's going on */
+    margin-top: 85px;
+    padding-top: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    margin-bottom: -20px;
+    font-family: 'Arvo', serif;
+
+    /* Just the fancy background */
+  background: #2f73f1;
+    background: -webkit-linear-gradient(top,#2f73f1 32%,#00e5a6 100%);
+    background: -o-linear-gradient(top,#2f73f1 32%,#00e5a6 100%);
+    background: linear-gradient(to bottom,#2f73f1 32%,#00e5a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f73f1', endColorstr='#00e5a6', GradientType=0 );
+}
+
+/* This is key to the entire process. You need to unskew the contents. It's mildly CPU heavy, but users shouldn't notice at all. */
+.unrotate {
+    -webkit-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.hero-blurb {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#sergear{
+  height: 190px;
+  width: 180px;
+}
+#thanksbtn{
+margin-left: 30%;
+margin-top: 5%;
+}
+#loginfrm label{
+  color: white;
+  font-family: 'Arvo', serif;
+}
+#loginfrm{
+  border: 1px solid white;
+  border-radius: 5%;
+  padding: 5%;
+}
+#qlist{
+  color:green;
+}

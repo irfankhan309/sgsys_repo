@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'SGApp/base.html' %}
+
+
+{% block content %}
+<div class="container">
+  {% if QList %}
+
+  {% for Quote in QList %}
+  <div  class="col-md-12 col-sm-12 col-xs-12">
+    <div class="card" style="width: 20rem;">
+    <!-- <img src="{{book.Image.url}}" class="card-img-top" alt="No Image Found"> -->
+    <div  id="qlist" class="card-body">
+      <h5 class="card-title">Desired Brand: <h1>{{Quote.Brand}}</h1></h5>
+      <p class="card-text"> Tons:{{Quote.Tons}}</p>
+      <p class="card-text"> Phone:{{Quote.Phone}}</p>
+      <p class="card-text"> EmailId:{{Quote.Email}}</p>
+      <p class="card-text">Message: {{Quote.Query}}</p>
+
+      <!-- <a href="#" class="btn btn-outline-primary">Place An Order</a> -->
+    </div>
+  </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+
+
+
+</div>
+
+
+
+{% endblock %}

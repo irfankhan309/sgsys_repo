@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% extends 'SGApp/base.html' %}
+<title>{% block title %}SG home{% endblock %}</title>
+
+{% block content %}
+
+{% if lists %}
+{% for AC in lists %}
+<div class="well">
+
+<div class="card mb-12" style="max-width: 85%;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img  id="acimg"src="{{AC.Image.url}}" class="card-img-top" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{AC.Info}}</h5>
+        <!-- <p class="card-text">Stars:{{AC.Rating}}</p> -->
+        <div class="rating">
+          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>   {{AC.Rating}}
+        </div> <br>
+        <a href="/Buy" class="btn btn-primary">buy</a>
+        <a href="/quote" class="btn btn-outline-success">Get Quotation</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endfor %}
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

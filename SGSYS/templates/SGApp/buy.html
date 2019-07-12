@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'SGApp/base.html' %}
+<title>{% block title %}SG order{% endblock %}</title>
+
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<div class="container">
+<div class="jumbotron">
+<form  method="post">
+{% csrf_token %}
+{{ Form|crispy }}
+<button type="submit" class="btn btn-outline-success">Buy</button>
+</form>
+<br><hr>
+<p id="Note">Note : We Are Not Dealing With Online Payments.</p><hr>
+<p id="Note1">We Will Call You On Given Number & Confirm The Product Details</p><hr>
+</div>
+
+</div>
+
+
+
+{% endblock %}
